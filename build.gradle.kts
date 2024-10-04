@@ -22,7 +22,7 @@ val openapiSpec: Configuration by configurations.creating {
 }
 
 dependencies {
-    openapiSpec("events.boudicca:search-api:0.2.0:openapi@json")
+    openapiSpec("events.boudicca:search-api:0.5.0:openapi@json")
 }
 
 tasks.register<GenerateTask>("generateTypescriptClient") {
