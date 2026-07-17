@@ -1,7 +1,7 @@
 import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
 
 plugins {
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version "2.3.21"
     id("org.openapi.generator") version "7.2.0"
 }
 
@@ -22,7 +22,7 @@ val openapiSpec: Configuration by configurations.creating {
 }
 
 dependencies {
-    openapiSpec("events.boudicca:search-api:0.5.0:openapi@json")
+    openapiSpec("events.boudicca:search-api:0.7.0:openapi@json")
 }
 
 tasks.register<GenerateTask>("generateTypescriptClient") {
